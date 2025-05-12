@@ -1,0 +1,92 @@
+/* JobListings.css */
+
+/* Container for the job listings page */
+.job-listings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .job-listings-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Styling the job cards container */
+  .job-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+  }
+  
+  /* Individual job card */
+  .job-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .job-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .job-card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .job-card-company-location {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .job-card-description {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .job-card-jobtype {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #007bff;
+  }
+  
+  /* Card actions styling */
+  .job-card-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .job-card-actions .MuiButton-root {
+    font-size: 0.875rem;
+    padding: 5px 10px;
+  }
+  
+  /* Sidebar styling (if any customizations needed) */
+  .MuiDrawer-paper {
+    top: 0;
+    height: calc(100% - 64px);
+  }
+  
+  .MuiDrawer-paper.MuiDrawer-paperAnchorLeft {
+    background-color: #f4f7fb;
+  }
+  
